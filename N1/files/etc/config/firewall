@@ -1,3 +1,0 @@
-
-config defaults
-	option syn_flood '0'
