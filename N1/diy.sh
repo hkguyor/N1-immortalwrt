@@ -12,7 +12,7 @@ cp -fr package/amlogic/luci-app-amlogic feeds/luci/applications/
 # Clean packages
 rm -rf package/amlogic
 
-cat >> files/etc/uci-defaults/99-custom <<EOF
+cat >> package/base-files/files/etc/uci-defaults/99-custom <<EOF
 uci set system.@system[0].hostname='NoneWrt'
 uci commit system
 
