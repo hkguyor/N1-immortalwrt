@@ -1,3 +1,5 @@
+#!/bin/sh
+
 uci set system.@system[0].hostname='NoneWrt'
 uci commit system
 
