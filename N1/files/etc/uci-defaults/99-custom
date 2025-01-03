@@ -16,7 +16,7 @@ uci del dhcp.lan.max_valid_lifetime
 uci set dhcp.lan.ignore='1'
 uci commit dhcp
 
-uci del firewall.cfg01e63d.synflood_protect
+uci del firewall.synflood_protect
 uci commit firewall
 
 exit 0
