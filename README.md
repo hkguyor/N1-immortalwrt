@@ -6,8 +6,7 @@ luci-app-dockerman：docker 管理<br>
 [luci-app-passwall](https://github.com/xiaorouji/openwrt-passwall)：科学上网<br>
 luci-app-samba4：存储共享<br>
 29/12/2024 增加<br>
-luci-theme-argon<br>
-luci-app-argon-config<br>
+luci-app-autoreboot<br>
 luci-app-homeproxy<br>
 luci-app-openclash<br>
 luci-app-ttyd<br>
