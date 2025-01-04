@@ -19,4 +19,7 @@ uci commit dhcp
 uci del firewall.synflood_protect
 uci commit firewall
 
+sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='ImmortalWrt 23.05.4 @ hkguyor'" >> /etc/openwrt_release
+
 exit 0
