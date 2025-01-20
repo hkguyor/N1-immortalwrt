@@ -11,3 +11,7 @@ cp -fr package/amlogic/luci-app-amlogic feeds/luci/applications/
 
 # Clean packages
 rm -rf package/amlogic
+
+sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='ImmortalWrt 23.05.4 Compiled by hkguyor'/" package/base-files/files/etc/openwrt_release
+
+echo -e "\e[32m$0 [DONE]\e[0m"
