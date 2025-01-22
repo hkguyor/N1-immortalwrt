@@ -16,4 +16,8 @@ uci del dhcp.lan.max_valid_lifetime
 uci set dhcp.lan.ignore='1'
 uci commit dhcp
 
+FILE_PATH="/etc/openwrt_release"
+NEW_DESCRIPTION="ImmortalWrt 23.05.4 Compiled by hkguyor"
+sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
+
 exit 0
