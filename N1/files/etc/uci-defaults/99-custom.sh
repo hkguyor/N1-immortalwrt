@@ -19,8 +19,7 @@ uci commit dhcp
 uci del firewall.cfg01e63d.synflood_protect
 uci commit firewall
 
-FILE_PATH="/etc/openwrt_release"
-NEW_DESCRIPTION="ImmortalWrt 23.05.4 Compiled by hkguyor"
-sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
+sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='ImmortalWrt 23.05.4 Compiled by hkguyor '" >> /etc/openwrt_release
 
 exit 0
