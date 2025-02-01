@@ -5,9 +5,10 @@
 
 # Add packages
 git clone https://github.com/ophub/luci-app-amlogic --depth=1 package/amlogic
+git clone https://github.com/xiaorouji/openwrt-passwall --depth=1 package/passwall
 
 # Update packages
-cp -fr package/amlogic/luci-app-amlogic feeds/luci/applications/
+cp -fr package/amlogic/luci-app-amlogic package/passwall/luci-app-passwall feeds/luci/applications/
 
 # Clean packages
-rm -rf package/amlogic
+rm -rf package/amlogic package/passwall
